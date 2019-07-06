@@ -14,7 +14,7 @@ class Solution:
         else:
             return first_match and self.isMatch(text[1:], pattern[1:])
 
-class Solution:          
+class Solution2:          
     # 搜索 自顶向下,增加备忘录
     def isMatch(self, text: str, pattern: str) -> bool:
         memo = {}
@@ -35,7 +35,7 @@ class Solution:
         return dp(0,0)
         
 
-class Solution:          
+class Solution3:          
     # 搜索 关于*两个字符一起判断会省事很多，自底向上
     def isMatch(self, text: str, pattern: str) -> bool:
         dp = [[False] * (len(pattern) + 1) for _ in range(len(text) + 1)]
